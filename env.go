@@ -10,10 +10,10 @@ import (
 )
 
 /*
-Get returns the value of the environment value named name,
-or sets and returns the default value if given,
+Get returns the value of the named environment value,
+or sets and returns the given default value,
 or else logs a fatal error.
-Use "" as defaultValue to not set the environmet variable if missing.
+Use "" as default value to not set the environment variable if missing.
 */
 func Get(name string, defaultValue ...string) (value string) {
 	if value = os.Getenv(name); value == "" {
