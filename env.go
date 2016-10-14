@@ -10,7 +10,7 @@ import (
 )
 
 /*
-Get returns the value of the named environment value,
+Get returns the value of the named environment variable,
 or sets and returns the given default value,
 or else logs a fatal error.
 Use "" as default value to not set the environment variable if missing.
